@@ -1,0 +1,50 @@
+#new-products {
+	padding: 75px 0 90px;
+}
+
+#new-products .products-wrap {
+	max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* top area */
+#top-area {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	margin: 13px 0 22px;
+}
+
+#top-area .title h2 {
+	font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 120%;
+}
+
+#top-area .title h2::after {
+	content: '';
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 10px 0 0;
+  background: #c40f39;
+}
+
+#top-area .title p {
+	font-size: 13px;
+  margin-top: 10px;
+}
+
+.box img {
+	border-radius: 20px;
+}
+
+.new1 img {
+	margin-top: 34px;
+}
+
+#bottom-area {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 22px;
+}

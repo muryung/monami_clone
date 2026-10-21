@@ -1,0 +1,89 @@
+#best-products {
+  width: 100%;
+  background-color: #eeeeee;
+  padding: 70px 0;
+  text-align: center;
+}
+
+#best-products .title h1 {
+  font-size: 32px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #000;
+  line-height: 120%;
+}
+
+#best-products .title h1::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 10px auto;
+  background: #c40f39;
+}
+
+#best-products .title p {
+  font-size: 13.5px;
+  color: #555555;
+}
+
+.pen-select {
+  margin: 40px 0;
+}
+
+.pen-select ul li {
+  display: inline-block;
+}
+
+.pen-select ul a {
+  text-align: center;
+  display: block;
+  width: 153px;
+  height: 32px;
+  color: #898989;
+  border: 2px solid #bcbcbc;
+  line-height: 26px;
+  border-radius: 50px;
+  font-size: 14px;
+}
+
+.pen-select ul a.active {
+  border: 2px solid #c40f39;
+  color: #c40f39;
+}
+
+/* Swiper */
+
+.swiper-slide .product {
+  background-color: white;
+  width: 266px;
+  padding: 20px 10px;
+  text-align: left;
+  border-radius: 20px;
+}
+
+.swiper-slide .product img {
+  display: block;
+  width: 100%;
+}
+
+.swiper-slide .product .info {
+  margin: 0 30px 20px 30px;
+}
+
+.swiper-slide .product .info p {
+  font-size: 13px;
+  margin: 33px 0 5px;
+}
+
+.swiper-slide .product .info h3 {
+  font-size: 15px;
+}
+
+/* pen info */
+
+.pen-info {
+  margin-top: 60px;
+  width: 100%;
+  border-top: 1px dotted #ccc;
+}

@@ -17,3 +17,9 @@ a {
   text-decoration: none;
   color: black;
 }
+
+.wrap {
+  max-width: 1400px;
+  width: 94%;
+  margin: 0 auto;
+}
