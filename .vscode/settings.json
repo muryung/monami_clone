@@ -1,0 +1,11 @@
+{
+  "editor.tabSize": 2,
+  "editor.insertSpaces": false,
+  // 기본 터미널을 Git Bash로 설정
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // Emmet 한국어 설정
+  "emmet.variables": {
+    "lang": "ko"
+  },
+  "liveServer.settings.port": 5501
+}
