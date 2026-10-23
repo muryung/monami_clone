@@ -10,11 +10,15 @@
 }
 
 /* header top */
-
 #header-top {
   height: 59px;
-  display: flex;
   border-bottom: 1px solid #b1b1b1b9;
+  max-width: 1400px;
+  width: 94%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 #header-top .links {
@@ -69,11 +73,6 @@
 #header-bottom {
   height: 89px;
   line-height: 89px;
-  position: relative;
-}
-
-/* .header-wrap  */
-.header-wrap {
   max-width: 1400px;
   width: 94%;
   margin: 0 auto;
@@ -82,28 +81,37 @@
   justify-content: space-between;
 }
 
-.submenu-bg {
-  background-color: rgba(255, 255, 255, 0.95);
-  position: absolute;
-  top: 89px;
-  left: 0;
-  width: 100%;
-  height: 425px;
-}
-
-.header-wrap > ul {
+#header-bottom > ul {
   display: flex;
   font-size: 17px;
   padding: 0 10px;
   margin-left: 30px;
+  width: 100%;
+  text-align: center;
 }
 
-.header-wrap > ul > li {
-  text-align: center;
+#header-bottom > ul > li {
   white-space: nowrap;
-  padding: 0 20px;
   position: relative;
   width: calc(100% / 7);
+  padding: 0 5px;
+}
+
+#header-bottom > ul > li{
+  transition: all 0.3s;
+}
+
+#header-bottom > ul > li:hover {
+  color: #c40f39;
+}
+
+#header-bottom > ul > li:hover > a::after {
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background-color: #c40f39;
 }
 
 #header-bottom .menu {
@@ -128,12 +136,55 @@
   background-color: #333;
 }
 
-.header-submenu {
+/* submenu */
+.submenu-bg {
+  background-color: rgba(255, 255, 255, 0.95);
+  position: absolute;
+  top: 148px;
+  left: 0;
+  width: 100%;
+  height: 425px;
+  display: none;
+}
+
+.submenu-bg.active {
   display: block;
+}
+
+.header-submenu {
+  display: none;
   position: absolute;
   width: 100%;
   top: 100%;
   left: 0;
+  padding-top: 10px;
+}
+
+.header-submenu.active {
+  display: block;
+}
+
+.header-submenu li {
+  width: 95%;
+  margin: 0 auto;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+.header-submenu li:last-child {
+  border: 0;
+}
+
+.header-submenu a {
+  font-size: 14px;
+  color: #676767;
+  display: block;
+  height: 49px;
+  line-height: 49px;
+  transition: all 0.3s;
+}
+
+.header-submenu a:hover {
+  color: #c40f39;
 }
 
 @media (max-width: 1450px) {
