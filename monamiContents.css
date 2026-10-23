@@ -128,7 +128,7 @@
   background: url(images/contents/shop_bg.png);
 }
 
-.now {
+.now-btn {
   text-align: center;
   display: block;
   width: 153px;
@@ -141,7 +141,15 @@
   margin: 0 auto;
   margin-top: 45px;
   font-size: 13.5px;
+  transition: all 0.5s;
 }
+
+.now-btn:hover {
+  background-color: #c40f39;
+  color: white;
+}
+
+
 
 @media (max-width: 1520px) {
   #monami-contents .news {

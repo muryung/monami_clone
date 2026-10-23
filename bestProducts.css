@@ -55,9 +55,8 @@
 /* Swiper */
 
 .pen-slider .swiper-slide {
-  display: flex;
   width: 266px;
-  min-width: 266px;
+  max-width: 266px;
 }
 
 .pen-slider .product {
@@ -71,15 +70,18 @@
 .pen-slider .product img {
   display: block;
   width: 100%;
+  height: 390px;
 }
 
 .pen-slider .product .info {
   margin: 0 30px 20px 30px;
+  height: 45px;
 }
 
 .pen-slider .product .info p {
   font-size: 13px;
   margin: 33px 0 5px;
+  color: #b3b3b3;
 }
 
 .pen-slider .product .info h3 {
@@ -108,12 +110,12 @@
 
 .pen-info .arrows .arrow1 {
   left: 0;
-  top: -14px;
+  top: -10px;
 }
 
 .pen-info .arrows .arrow2 {
   right: 0;
-  top: -14px;
+  top: -10px;
 }
 
 .pen-info .drag-scroll {

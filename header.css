@@ -43,6 +43,9 @@
   background: url(images/header/lang_arr.gif) no-repeat right center;
 }
 
+#header-top .lang:hover {
+}
+
 #header-top .sns {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -66,6 +69,10 @@
   background: url(images/header/tm_bar.gif) no-repeat left;
   margin-left: 10px;
   padding-left: 12px;
+}
+
+#header-top .menu a {
+  color: #9b9a9a;
 }
 
 /* header bottom */
