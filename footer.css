@@ -1,0 +1,134 @@
+#footer {
+	padding: 65px 0;
+	background-color: #111111;
+}
+
+.footer-top {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 25px;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.footer-top .top-etc ul {
+	display: flex;
+}
+
+.footer-top .top-etc ul li {
+	background: url(images/footer/fm_bar.gif) no-repeat right center;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+
+.footer-top .top-etc a {
+	font-size: 13.5px;
+	color: rgba(255, 255, 255, 0.8);
+}
+
+.footer-top .top-etc a.active {
+	color: white;
+}
+
+/* footer-bottom */
+.footer-bottom {
+	padding-top: 20px;
+	display: flex;
+}
+
+.footer-bottom .info {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-bottom .info .title {
+	color: white;
+}
+
+.info .address {
+	font-size: 14px;
+	font-weight: 300;
+	margin-top: 10px;
+}
+
+.info .address span {
+	padding: 0 10px;
+}
+
+.info .copyright {
+	font-size: 12px;
+	font-weight: 300;
+}
+
+.cus-center {
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	margin-left: 50px;
+}
+
+.cus-center .title {
+	color: white;
+}
+
+.cus-center .tel {
+	color: rgba(255, 255, 255, 0.8);
+	font-size: 24px;
+}
+
+.cus-center .kakao{
+	color: white;
+	font-weight: 200;
+	font-size: 13.5px;
+	border: 1px solid rgba(255, 255, 255, 0.349);
+	margin-top: 15px;
+	background-color: #4a4a4a;
+	border-radius: 5px;
+	padding: 5px 0;
+	width: 155px;
+	height: 32px;
+}
+
+.cus-center .kakao::after {
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	content: '';
+	background: url(images/footer/family_arr.png) no-repeat;
+	background-size: cover;
+	margin: 0 0 2px 5px;
+	rotate: -90deg;
+}
+
+.family-site {
+	display: flex;
+	justify-content: flex-end;
+	margin-left: auto;
+}
+
+.family-site a {
+	width: 250px;
+	height: 32px;
+	line-height: 32px;
+	padding: 0 13px;
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	color: rgba(255, 255, 255, 0.3);
+	font-size: 13px;
+	text-align: left;
+	border-radius: 5px;
+	position: relative;
+}
+
+.family-site a::after {
+	display: inline-block;
+	width: 9px;
+	height: 5px;
+	content: '';
+	background: url(images/footer/family_arr.png) no-repeat right center;
+	background-size: cover;
+	margin: 0 0 2px 5px;
+	rotate: 180deg;
+	position: absolute;
+	right: 5%;
+	top: 30%;
+	transform: translateY(-50%);
+}

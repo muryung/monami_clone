@@ -9,9 +9,18 @@
     <link rel="stylesheet" href="banner.css" />
     <link rel="stylesheet" href="newProducts.css" />
     <link rel="stylesheet" href="bestProducts.css" />
+    <link rel="stylesheet" href="video.css" />
+    <link rel="stylesheet" href="monamiContents.css" />
+    <link rel="stylesheet" href="footer.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&display=swap"
+      rel="stylesheet"
     />
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
@@ -44,14 +53,71 @@
       <div id="header-bottom">
         <div class="header-wrap">
           <img src="images/header/logo.jpg" alt="로고" />
+          <div class="submenu-bg"></div>
           <ul>
-            <li><a href="#">모나미소개</a></li>
-            <li><a href="#">모나미제품</a></li>
-            <li><a href="#">NEWS & VIDEO</a></li>
-            <li><a href="#">브랜드스토어</a></li>
-            <li><a href="#">모나미 미술대회</a></li>
-            <li><a href="#">고객지원</a></li>
-            <li><a href="#">기업 구매 / 개발</a></li>
+            <li>
+              <a href="#">모나미소개</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">모나미제품</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">NEWS & VIDEO</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">브랜드스토어</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">모나미 미술대회</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">고객지원</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">기업 구매 / 개발</a>
+              <ul class="header-submenu">
+                <li><a href="#">menu 01</a></li>
+                <li><a href="#">menu 02</a></li>
+                <li><a href="#">menu 03</a></li>
+                <li><a href="#">menu 04</a></li>
+              </ul>
+            </li>
           </ul>
           <div class="menu">
             <img src="images/header/btn_search.gif" alt="돋보기" />
@@ -67,14 +133,14 @@
 
     <div id="banner">
       <div class="banner-img"></div>
-      <div class="text-area">
+      <div class="text-area noto-sans-kr">
         <h1>
           어쩌면 삶은 <br />
           인생이라는 종이 위에 <br />
           써 내려가는 <br />
           펜의 기록 같습니다.
         </h1>
-        <p>
+        <p style="font-weight: 300; color: rgba(255, 255, 255, 0.8)">
           그중에서도 지우고 싶지 않은 기록이 있습니다. <br />
           모나미는 언제나 당신의 행복한 기록과 함께 합니다.
         </p>
@@ -90,7 +156,9 @@
                 NEW <br />
                 ARRIVALS
               </h2>
-              <p>가장 먼저 만나는 설레는 기다림</p>
+              <p class="noto-sans-kr" style="color: #6e6e6e">
+                가장 먼저 만나는 설레는 기다림
+              </p>
             </div>
             <div class="box new1">
               <img src="images/new/new_1.jpg" alt="신상품1" />
@@ -118,9 +186,9 @@
     <div id="best-products">
       <div class="title">
         <h1>BEST PRODUCT</h1>
-        <p>언제나 어디서나 생활 속에 함께하는 모나미</p>
+        <p class="noto-sans-kr">언제나 어디서나 생활 속에 함께하는 모나미</p>
       </div>
-      <div class="pen-select">
+      <div class="pen-select noto-sans-kr">
         <ul>
           <li><a href="#" class="active">프리미엄 펜</a></li>
           <li><a href="#">펜·펜슬</a></li>
@@ -214,14 +282,144 @@
         </div>
       </div>
       <div class="pen-info">
-        
+        <div class="arrows">
+          <span class="arrow1">
+            <img src="images/best/p_arr1.gif" alt="화살표" />
+          </span>
+          <span class="arrow2">
+            <img src="images/best/p_arr2.gif" alt="화살표" />
+          </span>
+        </div>
+        <div class="drag-scroll">
+          <div><img src="images/best/p_cursor.gif" alt="커서" /></div>
+          <h3 class="noto-sans-kr" style="font-weight: 200">DRAG & SCROLL</h3>
+        </div>
       </div>
     </div>
 
-    <div id="video"></div>
+    <div id="video">
+      <video src="images/monami_brand_web_60.mp4" autoplay muted loop></video>
+    </div>
 
-    <div id="monami-contents"></div>
+    <div id="monami-contents">
+      <div class="wrap">
+        <div class="news">
+          <div class="title">
+            <h2>MONAMI NEWS</h2>
+            <a href="#">MORE</a>
+          </div>
+          <div class="main-news noto-sans-kr">
+            <div class="thum">
+              <img
+                src="images/contents/b_file_1768790167lxyus9qzvj.png"
+                alt="뉴스 이미지"
+              />
+            </div>
+            <div class="main-news-text">
+              <h3 class="text-nowrap">
+                모나미, 지워지는 중성펜 리쥼 3·리쥼 S 신제..
+              </h3>
+              <p class="noto-sans-kr">
+                모나미, 지워지는 중성펜 리쥼 3·리쥼 S 신제품 출시■ 60도 마찰열에
+                지워지는 특수잉크 적용해 손쉽게 지울 수 ..
+              </p>
+            </div>
+            <span class="date1 date"> 2025-12-15 </span>
+          </div>
+          <ul class="sub-news">
+            <li>
+              <a href="#"
+                >- ‘쓰는 펜’과 ‘그리는 펜’ 직접 경험해보세요! 모나미,
+                갤러리아..</a
+              >
+              <span class="date">2025-12-11</span>
+            </li>
+            <li>
+              <a href="#"
+                >- 주방 필수품 키친마카 라인업 확대.. 모나미, ‘실리콘 전용
+                키친마..</a
+              >
+              <span class="date">2025-11-17</span>
+            </li>
+            <li>
+              <a href="#"
+                >- 10월 25일 독도의 날 기념 모나미 ‘153 독도’ 수익금 기부 및
+                특별 ..</a
+              >
+              <span class="date">2025-10-24</span>
+            </li>
+          </ul>
+        </div>
+        <div class="as inquiry">
+          <div class="title">
+            <img src="images/contents/inquiry_tit_bg.png" alt="inquiry" />
+            <h2>INQUIRY</h2>
+          </div>
+          <div class="contents">
+            <p>
+              언제나 소중한 의견에 귀 기울이겠습니다.
+              <br />
+              궁금한 사항은 문의하세요.
+            </p>
+          </div>
+          <div class="now">
+            <a href="#">INQUIRY NOW</a>
+          </div>
+        </div>
+        <div class="as shop">
+          <div class="title">
+            <img src="images/contents/brandstore_tit_bg.png" alt="shop" />
+            <h2>모나미 네이버 브랜드스토어</h2>
+          </div>
+          <div class="contents">
+            <p>
+              모나미 공식 쇼핑몰입니다.
+              <br />
+              공식몰만의 다양한 혜택을 만나보세요.
+            </p>
+          </div>
+          <div class="now">
+            <a href="#">BUY NOW</a>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div id="footer"></div>
+    <div id="footer">
+      <div class="wrap">
+        <div class="footer-top">
+          <img src="images/footer/foot_logo.jpg" alt="하단 로고" />
+          <div class="top-etc">
+            <ul>
+              <li><a href="#">회사 소개</a></li>
+              <li><a href="#" class="active">개인정보처리방침</a></li>
+              <li><a href="#">이메일무단수집거부</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <div class="info">
+            <div class="title">INFO</div>
+            <div class="address">
+              ADDRESS : 경기도 용인시 수지구 손곡로 17
+              <span>|</span>
+              FAX : 031-270-5154 TEL : 031-216-0153
+              <span>|</span>
+            </div>
+            <div class="copyright">
+              COPYRIGHT(C) MONAMI.CO.,LTD. ALL RIGHTS RESERVED.
+            </div>
+          </div>
+          <div class="cus-center">
+            <div class="title">CUSTOMER CENTER</div>
+            <div class="tel">080-022-0153</div>
+            <div class="kakao"><a href="#">카카오톡 문의</a></div>
+          </div>
+          <div class="family-site">
+            <a href="#">FAMILY SITE</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

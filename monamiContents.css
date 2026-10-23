@@ -1,0 +1,187 @@
+#monami-contents .wrap {
+  display: flex;
+}
+
+#monami-contents .news {
+  width: 650px;
+  height: 355px;
+  padding-top: 45px;
+  padding-right: 40px;
+}
+
+#monami-contents .news .title {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+#monami-contents .news .title::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 10px 0 0;
+  background: #c40f39;
+}
+
+#monami-contents .news .title h3 {
+  font-size: 20px;
+  width: 250px;
+}
+
+#monami-contents .news .title a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 11px;
+  text-decoration: underline;
+}
+
+.main-news {
+  display: flex;
+  gap: 3%;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.main-news .thum img {
+  width: 164px;
+  height: 113px;
+}
+
+.main-news-text h3 {
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.main-news-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box; /* 박스 형태로 제한 */
+  -webkit-line-clamp: 2; /* 보여줄 최대 줄 수 (여기에 원하는 숫자 입력) */
+  -webkit-box-orient: vertical; /* 박스 방향을 수직으로 설정 */
+  font-size: 14px;
+}
+
+.date {
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 13.5px;
+  color: #888888;
+}
+
+.main-news .date1 {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+}
+
+.sub-news {
+  font-size: 13.5px;
+}
+
+.sub-news li {
+  position: relative;
+  line-height: 170%;
+}
+
+.sub-news a {
+  color: #555;
+}
+
+.sub-news .date {
+  position: absolute;
+  right: 0;
+}
+
+.as {
+  width: 349px;
+  height: 355px;
+  text-align: center;
+  background: url(images/contents/inquiry_bg.jpg);
+}
+
+.as .title {
+  margin-top: 65px 0 0;
+  padding-top: 75px;
+}
+
+.as .title::after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 4px;
+  margin: 10px auto;
+  background: #c40f39;
+}
+
+.as h2 {
+  font-size: 20px;
+}
+
+.as p {
+  font-size: 13.5px;
+  color: #6a6a6a;
+}
+
+.shop {
+  background: url(images/contents/shop_bg.png);
+}
+
+.now {
+  text-align: center;
+  display: block;
+  width: 153px;
+  height: 32px;
+  line-height: 26px;
+  border-radius: 50px;
+  font-size: 14px;
+  border: 2px solid #c40f39;
+  color: #c40f39;
+  margin: 0 auto;
+  margin-top: 45px;
+  font-size: 13.5px;
+}
+
+@media (max-width: 1520px) {
+  #monami-contents .news {
+    min-width: 440px;
+    width: 46%;
+  }
+
+  .main-news-text {
+    width: 70%;
+  }
+
+  .main-news-text h3 {
+    width: 350px;
+  }
+
+  .main-news-text p {
+    width: 350px;
+  }
+}
+
+@media (max-width: 1450px) {
+  #monami-contents .news {
+    width: 44%;
+  }
+
+  .main-news-text {
+    width: 65%;
+  }
+}
+
+@media (max-width: 1355px) {
+  #monami-contents .news {
+    width: 40%;
+  }
+
+  .main-news-text h3 {
+    width: 250px;
+  }
+
+  .main-news-text p {
+    width: 200px;
+  }
+}
